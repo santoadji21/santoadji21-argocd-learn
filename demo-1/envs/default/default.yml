@@ -14,9 +14,9 @@ spec:
     path: demo-1/envs/default
     targetRevision: master
     helm: 
-      values: | 
+      values: |
         replica:
-          replicaCount: 4
+          count: 4
   destination:
     server: https://kubernetes.default.svc
     namespace: default

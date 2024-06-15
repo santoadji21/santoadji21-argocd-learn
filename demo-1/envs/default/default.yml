@@ -10,7 +10,15 @@ spec:
   source:
     directory:
       recurse: true
-    path: envs/default
+    repoURL: 'https://github.com/santoadji21/santoadji21-argocd-learn.git'
+    path: demo-1/envs/default
+    targetRevision: master
   destination:
     server: https://kubernetes.default.svc
     namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

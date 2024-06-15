@@ -13,6 +13,10 @@ spec:
     repoURL: 'https://github.com/santoadji21/santoadji21-argocd-learn.git'
     path: demo-1/envs/default
     targetRevision: master
+    helm: 
+      values: | 
+        replica:
+          replicaCount: 4
   destination:
     server: https://kubernetes.default.svc
     namespace: default

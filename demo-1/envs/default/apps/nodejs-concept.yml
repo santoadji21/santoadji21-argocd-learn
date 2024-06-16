@@ -10,7 +10,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/santoadji21/santoadji21-argocd-learn.git
-    targetRevision: main
+    targetRevision: master
     path: demo-1/apps/nodejs-concepts
   syncPolicy:
     automated:
